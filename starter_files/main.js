@@ -83,14 +83,12 @@ console.log(itemComponents);
 
 
 // 6: How many items were made by their sellers?
-let homeMade = [];
 
 function question6() {
   // Answer:
-  for (
-    if i = 0; i < data.length; i++) {
-    if (data.
-      "who_made" === "i_did") {
+  let homeMade = [];
+  for (let i = 0; i < data.length; i++) {
+    if (data.who_made === "i_did") {
       homeMade.push(data[i]);
     }
   }
