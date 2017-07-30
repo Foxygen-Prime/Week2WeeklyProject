@@ -12,10 +12,10 @@ console.log(data);
 function question1() {
   // Answer:
   let avg = "";
-  for (let i = 0; i < data.length; i++) {
-    (avg += data[i])
+  for (let i = 0; i < data.price.length; i++) {
+    (avg += data[i].price)
   }
-  avg = avg / data.length;
+  avg = avg / data.price.length;
   console.log(question1)
 }
 
@@ -38,9 +38,9 @@ console.log(midPricing);
 
 // 3: Which item has a "GBP" currency code? Display it's name and price.
 function question3() {
-  // Answer: reDO AND SET UP A LOOP
+  // Answer:
   let answer3 = [];
-  for (i = 0; i < data.length; i++) {
+  for (let i = 0; i < data.currency_code.length; i++) {
     if (data.currency_code === "GBP") {
       answer3.push(data.title + data.price)
     }
