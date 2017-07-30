@@ -48,17 +48,18 @@ function question3() {
   }
 }
 console.log(answer3);
-//come back to this one, not sure what to do
+
 
 // 4: Display a list of all items who are made of wood.
 
-let woodProducts = [];
 
 function question4() {
   // Answer:
-  for (
-    if i = 0; i < data.length; i++) {
-    woodProducts.push(data.materials["wood"]);
+  let woodProducts = [];
+  for (let i = 0; i < data.length; i++) {
+    if (data.materials = "wood") {
+      woodProducts.push(data.materials["wood"]);
+    }
   }
 
 }
@@ -67,12 +68,12 @@ console.log(woodProducts);
 
 // 5: Which items are made of eight or more materials?
 //    Display the name, number of items and the items it is made of.
-let itemComponents = [];
 
 function question5() {
   // Answer:
+  let itemComponents = [];
   for (i = 0; i < data.materials.length; i++) {
-    if (data.materials[] >= 8) {
+    if (data.materials.length >= 8) {
       itemComponents.push(data.title, data.materials.length, data.items);
     }
   }
