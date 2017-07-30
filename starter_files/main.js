@@ -38,8 +38,14 @@ console.log(midPricing);
 
 // 3: Which item has a "GBP" currency code? Display it's name and price.
 function question3() {
-  // Answer:
-  let answer3 = string.match(data.currency_code."GBP")
+  // Answer: reDO AND SET UP A LOOP
+  let answer3 = "";
+  for (i = 0; i < data.length; i++) {
+    if string.match(data.currency_code.
+      "GBP") {
+      answer3.push(data.title + data.price)
+    }
+  }
 }
 console.log(answer3);
 //come back to this one, not sure what to do
