@@ -26,14 +26,13 @@ function question1() {
 function question2() {
   // Answer:
   let midPricing = [];
-  for (let i = 0; i < data.length; i++) {
-    if (data[i].price >= 14 && data[i].price <= 18) {
-      midPricing.push(data[i].title);
+  for (let i = 0; i < data.price.length; i++) {
+    if (data.price >= 14 && data.price <= 18) {
+      midPricing.push(data.title);
     }
   }
+  console.log(question2);
 }
-console.log(midPricing);
-
 
 
 // 3: Which item has a "GBP" currency code? Display it's name and price.
@@ -45,8 +44,9 @@ function question3() {
       answer3.push(data.title + data.price)
     }
   }
+  console.log(question3);
 }
-console.log(answer3);
+
 
 
 // 4: Display a list of all items who are made of wood.
@@ -55,18 +55,13 @@ console.log(answer3);
 function question4() {
   // Answer:
   let woodProducts = [];
-  for (let i = 0; i < data.length; i++) {
-    for (let n = 0; n < data[i].materials.length; n++) {
-      if (data[i].materials[n] === "wood") {
-        woodProducts.push(data.title);
-      }
+  for (let i = 0; i < data.materials.length; i++) {
+    if (data.materials === "wood") {
+      woodProducts.push(data.title);
     }
   }
-
+  console.log(question4);
 }
-
-}
-console.log(woodProducts);
 
 
 // 5: Which items are made of eight or more materials?
