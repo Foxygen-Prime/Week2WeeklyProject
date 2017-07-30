@@ -13,7 +13,7 @@ function question1() {
   // Answer:
   let avg = "";
   for (let i = 0; i < data.price.length; i++) {
-    (avg += data[i].price)
+    (avg += data.price[i])
   }
   avg = avg / data.price.length;
   console.log(question1)
@@ -27,8 +27,8 @@ function question2() {
   // Answer:
   let midPricing = [];
   for (let i = 0; i < data.price.length; i++) {
-    if (data.price >= 14 && data.price <= 18) {
-      midPricing.push(data.title);
+    if (data.price[i] >= 14 && data.price[i] <= 18) {
+      midPricing.push(data.title[i]);
     }
   }
   console.log(question2);
@@ -40,7 +40,7 @@ function question3() {
   // Answer:
   let answer3 = [];
   for (let i = 0; i < data.currency_code.length; i++) {
-    if (data.currency_code === "GBP") {
+    if (data.currency_code[i] === "GBP") {
       answer3.push(data.title + data.price)
     }
   }
@@ -56,7 +56,7 @@ function question4() {
   // Answer:
   let woodProducts = [];
   for (let i = 0; i < data.materials.length; i++) {
-    if (data.materials === "wood") {
+    if (data.materials[i] === "wood") {
       woodProducts.push(data.title);
     }
   }
@@ -71,13 +71,13 @@ function question5() {
   // Answer:
   let itemComponents = [];
   for (i = 0; i < data.materials.length; i++) {
-    if (data.materials.length >= 8) {
-      itemComponents.push(data.title, data.materials.length, data.items);
+    if (data.materials[i].length >= 8) {
+      itemComponents.push(data.title[i], data.materials[i].length, data.items[i]);
     }
   }
-
+console.log(question5);
 }
-console.log(itemComponents);
+
 
 
 // 6: How many items were made by their sellers?
@@ -86,8 +86,8 @@ function question6() {
   // Answer:
   let homeMade = [];
   for (let i = 0; i < data.length; i++) {
-    if (data.who_made === "i_did") {
-      homeMade.push(data[i]);
+    if (data.who_made[i] === "i_did") {
+      homeMade.push(data.item[i]);
     }
   }
   return homeMade.length
