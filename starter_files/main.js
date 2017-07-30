@@ -28,7 +28,7 @@ function question2() {
   let midPricing = [];
   for (let i = 0; i < data.price.length; i++) {
     if (data.price[i] >= 14 && data.price[i] <= 18) {
-      midPricing.push(data.title[i]);
+      midPricing.push(data.title[i])
     }
   }
   console.log(question2);
@@ -57,7 +57,7 @@ function question4() {
   let woodProducts = [];
   for (let i = 0; i < data.materials.length; i++) {
     if (data.materials[i] === "wood") {
-      woodProducts.push(data.title);
+      woodProducts.push(data.title)
     }
   }
   console.log(question4);
@@ -85,12 +85,12 @@ console.log(question5);
 function question6() {
   // Answer:
   let homeMade = [];
-  for (let i = 0; i < data.length; i++) {
+  for (let i = 0; i < data.who_made.length; i++) {
     if (data.who_made[i] === "i_did") {
-      homeMade.push(data.item[i]);
+      homeMade.push(data.item[i])
     }
   }
-  return homeMade.length
+  return homeMade.length;
 
 }
-console.log(homeMade.length);
+console.log(question6);
