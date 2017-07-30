@@ -59,13 +59,30 @@ console.log(woodProducts);
 
 // 5: Which items are made of eight or more materials?
 //    Display the name, number of items and the items it is made of.
+let itemComponents = [];
 function question5() {
   // Answer:
+  for (i = 0; i < data.materials.length; i++) {
+    if (data.materials[] >= 8) {
+      itemComponents.push(data.title,data.materials.length,data.items);
+    }
+  }
+
 }
+console.log(itemComponents);
 
 
 // 6: How many items were made by their sellers?
-// Answer:
+let homeMade = [];
+
 function question6() {
   // Answer:
+  for (if i = 0; i < data.length; i++) {
+    if (data."who_made" === "i_did") {
+      homeMade.push(data[i]);
+    }
+  }
+  return homeMade.length
+
 }
+console.log(homeMade.length);
