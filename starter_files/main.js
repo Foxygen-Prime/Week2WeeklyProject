@@ -8,10 +8,10 @@ console.log(data);
 
 // 1: Show me how to calculate the average price of all items.
 
-let avg = "";
 
 function question1() {
   // Answer:
+  let avg = "";
   for (let i = 0; i < data.length; i++) {
     (avg += data[i])
   }
@@ -22,9 +22,10 @@ console.log(avg)
 
 
 // 2: Show me how to get an array of items that cost between $14.00 and $18.00 USD
-let midPricing = [];
 
 function question2() {
+  // Answer:
+  let midPricing = [];
   for (let i = 0; i < data.length; i++) {
     if (i >= 14 && i <= 18) {
       midPricing.push(data[i]);
@@ -38,7 +39,7 @@ console.log(midPricing);
 // 3: Which item has a "GBP" currency code? Display it's name and price.
 function question3() {
   // Answer:
-  let answer3 = string.match(data["GBP"])
+  let answer3 = string.match(data.currency_code."GBP")
 }
 console.log(answer3);
 //come back to this one, not sure what to do
@@ -49,7 +50,8 @@ let woodProducts = [];
 
 function question4() {
   // Answer:
-  for (if i = 0; i < data.length; i++) {
+  for (
+    if i = 0; i < data.length; i++) {
     woodProducts.push(data.materials["wood"]);
   }
 
@@ -60,11 +62,12 @@ console.log(woodProducts);
 // 5: Which items are made of eight or more materials?
 //    Display the name, number of items and the items it is made of.
 let itemComponents = [];
+
 function question5() {
   // Answer:
   for (i = 0; i < data.materials.length; i++) {
     if (data.materials[] >= 8) {
-      itemComponents.push(data.title,data.materials.length,data.items);
+      itemComponents.push(data.title, data.materials.length, data.items);
     }
   }
 
@@ -77,8 +80,10 @@ let homeMade = [];
 
 function question6() {
   // Answer:
-  for (if i = 0; i < data.length; i++) {
-    if (data."who_made" === "i_did") {
+  for (
+    if i = 0; i < data.length; i++) {
+    if (data.
+      "who_made" === "i_did") {
       homeMade.push(data[i]);
     }
   }
