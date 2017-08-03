@@ -8,14 +8,13 @@ console.log(data);
 
 // 1: Show me how to calculate the average price of all items.
 
-
 function question1() {
   // Answer:
-  let avg = "";
-  for (let i = 0; i < data.price.length; i++) {
-    (avg += data.price[i])
+let avg = 0;
+  for (let i = 0; i < data.length; i++) {
+    (avg += data[i].price);
   }
-  avg = avg / data.price.length;
+  avg = avg / data.length;
   console.log(question1)
 }
 
@@ -26,9 +25,9 @@ function question1() {
 function question2() {
   // Answer:
   let midPricing = [];
-  for (let i = 0; i < data.price.length; i++) {
-    if (data.price[i] >= 14 && data.price[i] <= 18) {
-      midPricing.push(data.title[i])
+  for (let i = 0; i < data.length; i++) {
+    if (data[i].price >= 14 && data[i].price <= 18) {
+      midPricing.push(data[i].title)
     }
   }
   console.log(question2);
@@ -39,8 +38,8 @@ function question2() {
 function question3() {
   // Answer:
   let answer3 = [];
-  for (let i = 0; i < data.currency_code.length; i++) {
-    if (data.currency_code[i] === "GBP") {
+  for (let i = 0; i < data.length; i++) {
+    if (data[i].currency_code === "GBP") {
       answer3.push(data.title + data.price)
     }
   }
@@ -51,12 +50,11 @@ function question3() {
 
 // 4: Display a list of all items who are made of wood.
 
-
 function question4() {
   // Answer:
   let woodProducts = [];
-  for (let i = 0; i < data.materials.length; i++) {
-    if (data.materials[i] === "wood") {
+  for (let i = 0; i < data.length; i++) {
+    if (data[i].materials === "wood") {
       woodProducts.push(data.title)
     }
   }
@@ -70,24 +68,22 @@ function question4() {
 function question5() {
   // Answer:
   let itemComponents = [];
-  for (i = 0; i < data.materials.length; i++) {
-    if (data.materials[i].length >= 8) {
-      itemComponents.push(data.title[i], data.materials[i].length, data.items[i]);
+  for (i = 0; i < data.length; i++) {
+    if (data[i].length >= 8) {
+      itemComponents.push(data[i].title, data[i].materials.length, data[i].items);
     }
   }
 console.log(question5);
 }
-
-
 
 // 6: How many items were made by their sellers?
 
 function question6() {
   // Answer:
   let homeMade = [];
-  for (let i = 0; i < data.who_made.length; i++) {
-    if (data.who_made[i] === "i_did") {
-      homeMade.push(data.item[i])
+  for (let i = 0; i < data.length; i++) {
+    if (data[i].who_made === "i_did") {
+      homeMade.push(data[i].item)
     }
   }
   return homeMade.length;
